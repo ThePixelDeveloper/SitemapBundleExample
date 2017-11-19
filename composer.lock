@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "401b7140c17ce5138f97a92ffff1fa22",
+    "content-hash": "7b1cc36842acdff607d4fd9742ba1144",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -2191,6 +2191,89 @@
             "time": "2017-11-16T18:15:01+00:00"
         },
         {
+            "name": "thepixeldeveloper/sitemap",
+            "version": "5.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://www.devkit.net/thepixeldeveloper/sitemap.git",
+                "reference": "31d4884d1ac85867ae67c709480d9f7d50aa552e"
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Thepixeldeveloper\\Sitemap\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mathew Davies",
+                    "homepage": "http://mathew-davies.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "XML sitemap generation",
+            "keywords": [
+                "Sitemap",
+                "xml"
+            ],
+            "time": "2017-11-19T15:39:11+00:00"
+        },
+        {
+            "name": "thepixeldeveloper/sitemap-bundle",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://www.devkit.net/thepixeldeveloper/sitemap-bundle.git",
+                "reference": "49b048de7525fd9516dc703761b0dd378c6acbd3"
+            },
+            "require": {
+                "php": ">=7.0",
+                "thepixeldeveloper/sitemap": "^5.1"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^6.4",
+                "symfony/console": "^3.3",
+                "symfony/framework-bundle": "^3.3",
+                "symfony/yaml": "^3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Thepixeldeveloper\\SitemapBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mathew Davies",
+                    "homepage": "http://mathew-davies.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Symfony Bundle that integrates thepixeldeveloper/sitemap.",
+            "keywords": [
+                "Sitemap",
+                "bundle",
+                "symfony",
+                "xml"
+            ],
+            "time": "2017-11-19T21:17:05+00:00"
+        },
+        {
             "name": "twig/twig",
             "version": "v1.35.0",
             "source": {
@@ -2382,8 +2465,5 @@
     "platform": {
         "php": ">=5.5.9"
     },
-    "platform-dev": [],
-    "platform-overrides": {
-        "php": "5.5.9"
-    }
+    "platform-dev": []
 }
