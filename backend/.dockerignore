@@ -1,0 +1,5 @@
+var/cache/
+var/logs/
+var/sessions/
+var/sitemaps/
+vendor/

@@ -1,0 +1,13 @@
+kind: Project
+name: sitemap-bundle-example
+environments:
+    - name: development
+      providers:
+          - name: kubernetes
+            context: do-lon1-personal-garden-cluster
+            namespace: ${local.env.USER || local.username}-sitemap-bundle-example
+            defaultHostname: sitemap-bundle-example.k8s.mathew-davies.co.uk
+            buildMode: cluster-docker
+            setupIngressController: nginx
+
+defaultEnvironment: development
